@@ -1,0 +1,25 @@
+s = "My mom speaks Malayalam "
+s = s.toLowerCase()
+n1 = "", n2 = ""
+for (t of s) {
+    if (t != " ") {
+        n1 = n1 + t
+        n2 = t + n2
+    }
+    else {
+        if (n1 == n2){
+          console.log(n1,"-Palindrome")
+          
+        }
+        else{
+          console.log(n1,"-Not a palindrome")
+          
+        }
+        
+        n1 = ""
+        n2 = ""
+    }
+}
+
+
+//https://onecompiler.com/javascript/3x4wnk7u9
